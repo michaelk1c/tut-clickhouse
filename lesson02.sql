@@ -80,15 +80,12 @@ FROM agg_inventory
 WHERE id=3 
 GROUP BY id;
 
-
 CREATE TABLE log_location
 (
   id Int32,
   long String,
   lat Int32
 ) ENGINE = TinyLog;
-
-
 
 CREATE TABLE mysql_inventory
 (
