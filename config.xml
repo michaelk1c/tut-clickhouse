@@ -1,0 +1,8 @@
+<config>
+    <host from_env="CLICKHOUSE_HOST"/>
+    <port from_env="CLICKHOUSE_PORT"/>
+    <user from_env="CLICKHOUSE_USER"/>
+    <password from_env="CLICKHOUSE_PASSWORD"/>
+    <database>default</database>
+    <secure>false</secure>
+</config>
