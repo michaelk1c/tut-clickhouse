@@ -11,14 +11,13 @@ PRIMARY KEY (OrderID, OrderDate)
 ORDER BY (OrderID, OrderDate, CustomerID)
 SETTINGS index_granularity = 8192;
 
-
 INSERT INTO test.orders 
 VALUES (334, 123, '2021-09-15 14:30:00', 'some comment', 
 false);
 
 SELECT OrderID, OrderDate FROM test.orders;
 
-SELECT * FROM test.orders Pretty;
+SELECT * FROM test.orders FORMAT Pretty;
 
 SHOW databases;
-
+SHOW tables;
